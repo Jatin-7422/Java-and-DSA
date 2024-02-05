@@ -2,23 +2,20 @@ package Problems;
 
 public class RemoveDuplicacy {
 
+    public static boolean[] Map = new boolean[26]; // Boolean Array of containing Alphabets which returns true or false
 
-    public static boolean[] Map = new boolean[26]; // Boolean Array of containing Alphabets which returns true or false 
-
-    public static void RemoveDuplicates(String str , int idx , String NewString) {
+    public static void RemoveDuplicates(String str, int idx, String NewString) {
         if (idx == str.length()) {
             System.out.println(NewString);
             return;
         }
-
-        
         char CurrentChar = str.charAt(idx);
         if (Map[CurrentChar - 'a'] == true) {
-            RemoveDuplicates(str, idx +1 , NewString);
-        }else{
+            RemoveDuplicates(str, idx + 1, NewString);
+        } else {
             NewString += CurrentChar;
-            Map[CurrentChar -'a'] = true;
-            RemoveDuplicates(str, idx+1, NewString);
+            Map[CurrentChar - 'a'] = true;
+            RemoveDuplicates(str, idx + 1, NewString);
         }
     }
 
