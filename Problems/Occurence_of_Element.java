@@ -23,9 +23,7 @@ public class Occurence_of_Element {
 
             }
         }
-
         FindOccurence(str, idx + 1, element);
-
     }
 
     // Main Function to access the function
