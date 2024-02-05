@@ -20,5 +20,4 @@ public class Tower_of_Hanoi {
         int n = 3;
         TowerofHanoi(n, "S", "H", "D");
     }
-
 }
