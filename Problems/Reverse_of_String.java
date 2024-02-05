@@ -8,11 +8,10 @@ public class Reverse_of_String {
             System.out.print(str.charAt(index));
             return;
         }
-
         System.out.print(str.charAt(index));
         PrintReverseString(str, index - 1);
     }
-    
+
     public static void main(String[] args) {
         String str = "abcd";
         PrintReverseString(str, str.length() - 1);
