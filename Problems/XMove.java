@@ -2,8 +2,8 @@ package Problems;
 
 public class XMove {
 
-    public static void X_Move_to_end(String str, int index, int count , String NewString ) {
-        
+    public static void X_Move_to_end(String str, int index, int count, String NewString) {
+
         if (index == str.length()) {
             for (int i = 0; i < count; i++) {
                 NewString += 'x';
@@ -12,12 +12,11 @@ public class XMove {
             return;
         }
 
-
         char CurrentChar = str.charAt(index);
         if (CurrentChar == 'x') {
-            count ++ ;
+            count++;
             X_Move_to_end(str, index + 1, count, NewString);
-        }else{
+        } else {
             NewString += CurrentChar;
             X_Move_to_end(str, index + 1, count, NewString);
 
