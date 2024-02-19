@@ -1,4 +1,3 @@
-
 package Problems;
 
 public class Occurence_of_Element {
